@@ -78,7 +78,7 @@
         const maxPrice = Math.max(...pricesExact).toFixed(1);
         const avgPrice = (pricesExact.reduce((s, v) => s + v, 0) / pricesExact.length).toFixed(1);
 
-        document.getElementById(statsId).innerHTML = `<span style="color: #27ae60;">⬇️ <b>${minPrice}</b> snt</span><span style="color: #7f8c8d;">☁️ <b>${avgPrice}</b> snt</span><span style="color: #c0392b;">⬆️ <b>${maxPrice}</b> snt</span>`;
+        document.getElementById(statsId).innerHTML = `<span style="color: #27ae60;">⬇️ <b>${minPrice}</b> c</span><span style="color: #7f8c8d;">☁️ <b>${avgPrice}</b> c</span><span style="color: #c0392b;">⬆️ <b>${maxPrice}</b> c</span>`;
 
         let yMin = minPrice < 0 ? minPrice * 1.3 : 0; 
         let yMax = maxPrice > 0 ? maxPrice * 1.25 : 2;
